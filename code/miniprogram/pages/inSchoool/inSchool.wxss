@@ -1,0 +1,19 @@
+.root {
+  margin-top: 2rem;
+  height: 50vh;
+}
+.step {
+  font-size: large;
+  padding-bottom: 2rem;
+}
+.in-header .header {
+  text-indent: 1rem;
+}
+.in-mian{ 
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  font-size: small;
+  color: rgb(107, 107, 107);
+}

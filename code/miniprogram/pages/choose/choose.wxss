@@ -1,0 +1,14 @@
+/* pages/choose/choose.wxss */
+#choose {
+    height: 100%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.navIcon {
+    text-align:  center;
+}
+image {
+    width: 5rem;
+    height: 5rem;
+}

@@ -1,0 +1,15 @@
+<demo-block title="学生信息：" >
+  <view style="width:100%;height:400px;" >
+    <van-cell-group>
+      <van-cell title="姓名" value="{{name}}" />
+      <van-cell title="学号" value="{{snumber}}" />
+      <van-cell title="学院" value="{{xueyuan}}" />
+      <van-cell title="是否进行身份认证" value="{{idistrue === 1 ? '是' : '否'}}" />
+      <van-cell title="是否进行行程报备" value="{{xcistrue === 1 ? '是' : '否'}}" />
+      <van-cell title="天府健康码情况" value="{{jkma === 1 ? '是' : '否'}}" />
+      <van-cell title="个人健康情况" value="{{ishealth === 1 ? '是' : '否'}}" />
+      <van-cell title="是否提交进校审批表" value="{{issp === 1 ? '是' : '否'}}" />
+      <van-cell title="是否报备" value="{{isbb === 1 ? '是' : '否'}}" />
+    </van-cell-group>
+  </view>
+</demo-block>

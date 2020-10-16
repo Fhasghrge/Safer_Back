@@ -1,0 +1,6 @@
+/* pages/search/search.wxss */
+.btn{
+  width: 90%;
+  margin-top: 40px;
+  color: #999999;
+}

@@ -1,0 +1,52 @@
+<!-- pages/search/search.wxml -->
+<demo-block title="可通过下面的搜索来查询学生的入学情况，用于审批其入校资格：">
+  <van-search value="{{ value }}" shape="round" background="#4fc08d" placeholder="请输入学生的姓名或者学号" bind:search="onSearch" />
+</demo-block>
+<demo-block title="学生信息：">
+  <view style="width:100%;height:400px;" hidden="{{visble}}">
+    <!-- <view><text class="display:block">姓名：{{name}}</text></view>
+  <view><text class="display:block">年龄：{{age}}</text></view>
+   <view><text class="display:block">学院：{{xueyuan}}</text></view>
+  <view><text class="display:block">是否进行身份认证：{{idistrue}}</text></view>
+    <view><text class="display:block">是否进行行程报备：{{xcistrue}}</text></view>
+    <view><text class="display:block">天府健康码情况：{{jkma}}</text></view>
+    <view><text class="display:block">个人健康情况：{{ishealth}}</text></view>
+    <view><text class="display:block">是否提交进校审批表：{{issp}}</text></view>
+    <view><text class="display:block">是否报备：{{isbb}}</text></view> -->
+    <van-cell-group>
+      <van-cell title="姓名" value="{{name}}" />
+      <van-cell title="学号" value="{{snumber}}" />
+      <van-cell title="学院" value="{{xueyuan}}" />
+      <van-cell title="是否进行身份认证" value="{{idistrue}}" />
+      <van-cell title="是否进行行程报备" value="{{xcistrue}}" />
+      <van-cell title="天府健康码情况" value="{{jkma}}" />
+      <van-cell title="个人健康情况" value="{{ishealth}}" />
+      <van-cell title="是否提交进校审批表" value="{{issp}}" />
+      <van-cell title="是否报备" value="{{isbb}}" />
+    </van-cell-group>
+  </view>
+</demo-block>
+<demo-block title="审批管理:(切换按钮表示通过该审批)">
+  <view style="width:100%;height:300px;">
+    <van-cell-group>
+      <van-cell title="身份审批">
+        <van-switch checked="{{ checked1 }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange" />
+      </van-cell>
+      <van-cell title="路程报告审批">
+        <van-switch checked="{{ checked2 }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange1" />
+      </van-cell>
+      <van-cell title="健康状况表审批">
+        <van-switch checked="{{ checked3 }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange2" />
+      </van-cell>
+      <van-cell title="进校审批单审批">
+        <van-switch checked="{{ checked4 }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange3" />
+      </van-cell>
+      <van-cell title="宿舍入住审批">
+        <van-switch checked="{{ checked5 }}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange4" />
+      </van-cell>
+    </van-cell-group>
+  </view>
+</demo-block>
+<view class="weui-form__opr-area" style="margin-top:50rpx">
+  <a class="weui-btn weui-btn_primary">确认进校资格</a>
+</view>

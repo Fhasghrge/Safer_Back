@@ -1,0 +1,41 @@
+#location {
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #DDD;
+}
+#detailAdd {
+  text-indent: 1rem;
+}
+#daily-title {
+  box-shadow: 1px 1px 9px #ddd;
+  margin-bottom: 3vh;
+  padding-left: 2rem;
+  font-weight: bold;
+}
+#daily-title text {
+  color: rgb(162, 158, 158);
+  font-size: .5rem;
+  padding-left: 5rem;
+}
+#more-info {
+  margin: 0 5vw;
+  box-shadow: 0 0 8px rgb(221, 218, 213);
+}
+#more-info > view {
+  margin: 2vh auto;
+  position: relative;
+  height: 2rem;
+  text-indent: 2rem;
+  box-shadow: 1px 1px 9px #DDD;
+}
+.switch {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+}
+button {
+  background-color: rgb(235, 191, 126);
+  width: 16rem;
+  margin: 3rem auto 2rem;
+}

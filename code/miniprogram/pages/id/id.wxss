@@ -1,0 +1,2 @@
+/* pages/id/id.wxss */
+.page{background-color:var(--weui-BG-2)}.weui-toptips{display:block}.page3{height:100%}.weui-label{width:4.1em}

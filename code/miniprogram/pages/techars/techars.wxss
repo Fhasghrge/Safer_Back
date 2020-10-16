@@ -1,0 +1,30 @@
+/* pages/techars/techars.wxss */
+#page {
+  /* background-color: #d1d8e0; */
+  background-image: "../../images/actadd.png";
+}
+navigator {
+  border: 0px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.table {
+  /* border: 1px solid red; */
+  margin: 10px auto;
+  box-shadow: 2px 2px 8px #DDD;
+  
+}
+.table1 {
+  /* border: 1px solid red; */
+  margin: 10px auto;
+  box-shadow: 2px 2px 8px #DDD;
+}
+.table image {
+  /* border: 1px solid red; */
+}
+.navTitle {
+  font-weight: bold;
+  font-size: 1.2em;
+}

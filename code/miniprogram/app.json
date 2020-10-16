@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/choose/choose",
+    "pages/personInfo/personInfo",
+    "pages/inf/inf",
+    "pages/inSchoool/inSchool",
+    "pages/searchnew/searchnew",
+    "pages/per/per",
+    "pages/inHouse/inHouse",
+    "pages/tra/tra",
+    "pages/healthyTable/healthyTable",
+    "pages/techars/techars",
+    "pages/tecnew/tecnew",
+    "pages/id/id",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/daySign/daySign"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Back",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/id/id",
+        "text": "身份认证",
+        "iconPath": "images/id.png",
+        "selectedIconPath": "images/id_active.png"
+      },
+      {
+        "pagePath": "pages/tra/tra",
+        "text": "行程报告",
+        "iconPath": "images/location.png",
+        "selectedIconPath": "images/location_active.png"
+      },
+      {
+        "pagePath": "pages/per/per",
+        "text": "进校啦",
+        "iconPath": "images/school.png",
+        "selectedIconPath": "images/school_active.png"
+      },
+      {
+        "pagePath": "pages/inf/inf",
+        "text": "个人信息",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/person_active.png"
+      }
+    ],
+    "selectedColor": "#ea9518"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxb032bc789053daf4",
+    "wx34b9f47827e4801d"
+  ],
+  "plugins": {
+    "ocr-plugin": {
+      "version": "3.0.2",
+      "provider": "wx4418e3e031e551be"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

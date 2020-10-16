@@ -1,0 +1,18 @@
+/* pages/inf/inf.wxss */
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.hide {
+  display: none;
+}
+.addmit {
+  background-color: rgb(234, 149, 24);
+  width: 40vw;
+  position: fixed;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}

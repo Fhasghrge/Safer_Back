@@ -1,0 +1,86 @@
+<!-- pages/tra/tra.wxml -->
+<!-- pages/plugin/route-plan.wxml -->
+<view class="map-view-container">
+    <view class="map-view-content">
+        <view class="introduce">
+            <view id="itr-title">请通过以下操作报备你返校的行程：</view>
+            <!-- <view id="itr-conts">
+                <view>1.输入起点位置；</view>
+                <view>2.输入终点位置</view>
+                <view>3.出行票据上传；</view>
+                <view>4.提交。</view>
+            </view> -->
+            <van-steps steps="{{ steps }}" active="{{ active }}" active-color="#EA9518" />
+            <text>可选择中途到达终点，因本次进校检查点设置电子科技大学清水河校区西门，建议直接选择电子科技大学清水河校区西门；</text>
+        </view>
+    </view>
+    <view class="feature-container">
+        <view class="feature-content border-bottom border-top">
+            <text class="feature-label">起点位置</text>
+            <view class="feature-txt" bindtap="onChooseStartPoint">
+                <text wx:if="{{!startPoint}}">获取选点</text>
+                <text class="active" wx:else>{{startPoint.name}}</text>
+                <image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+            </view>
+        </view>
+        <view class="feature-content border-bottom">
+            <text class="feature-label">终点位置</text>
+            <view class="feature-txt" bindtap="onChooseEndPoint">
+                <text wx:if="{{!endPoint}}">获取选点</text>
+                <text class="active" wx:else>{{endPoint.name}}</text>
+                <image class="right-arrow" src="{{imgs.rightArrow}}"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="page" data-weui-theme="{{theme}}">
+    <view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}">
+        请首先进行校园卡识别！
+    </view>
+</view>
+<view class="page2" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title"></view>
+        <view class="page__desc"></view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                            <view class="weui-uploader__overview">
+                                <view class="weui-uploader__title">出行票据上传</view>
+                                <view class="weui-uploader__info">{{files.length}}/10</view>
+                            </view>
+                            <view class="weui-uploader__tips">请上传你主要的出行票据，如飞机票、动车票、火车票、大巴车票等！</view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                </view>
+                                <view class="weui-uploader__file">
+                                    <image class="weui-uploader__img" src="../images/pic_160.png" mode="aspectFill" />
+                                </view>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-form__opr-area">
+    <a class="weui-btn weui-btn_primary" bindtap='submitTra' style="background-color: rgb(234, 149, 24)">
+        提交
+    </a>
+</view>

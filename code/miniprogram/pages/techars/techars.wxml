@@ -1,0 +1,32 @@
+<!--pages/techars/techars.wxml-->
+  <view class="table">
+            <navigator 
+            bindtap="onCheckAuth" 
+            class="weui-media-box weui-media-box_appmsg" 
+            hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image 
+                    class="weui-media-box__thumb" 
+                    src="../../images/house_table.png" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="navTitle">认证/注册</view>
+                    <view class="weui-media-box__desc" style="color:black">请老师先进行认证/注册</view>
+                </view>
+            </navigator>
+        </view><view class="table1">
+            <navigator 
+            bindtap="Log" 
+            class="weui-media-box weui-media-box_appmsg" 
+            hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image 
+                    class="weui-media-box__thumb" 
+                    src="../../images/house_table.png" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="navTitle">登录</view>
+                    <view class="weui-media-box__desc" style="color:black">登录后即可进行操作</view>
+                </view>
+            </navigator>
+        </view>

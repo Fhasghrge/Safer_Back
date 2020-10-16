@@ -1,0 +1,15 @@
+<view>
+  <view class="in-header">
+    <view class="header">请依次在以下部门审核：</view>
+    <van-steps 
+      steps="{{ steps }}" 
+      active="{{ active }}" 
+      active-color="#EA9518"
+      direction="vertical"
+      active-icon="checked"
+      custom-class='root'
+      desc-class='step'
+       />
+  </view>
+  <view class="in-mian">请告知学号姓名，由相关单位进行审核</view>
+</view>

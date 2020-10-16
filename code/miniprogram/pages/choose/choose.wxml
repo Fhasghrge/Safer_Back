@@ -1,0 +1,19 @@
+<!--pages/choose/choose.wxml-->
+<view id="choose">
+  <view bindtap="tostuet" class="navIcon">
+    <view>
+      <image src="../../images/student-head.png"></image>
+    </view>
+    <view class="name">
+      <text>学生</text>
+    </view>
+  </view>
+  <view bindtap="totecher" class="navIcon">
+    <view>
+      <image src="../../images/teacher-head.png"></image>
+    </view>
+    <view class="name">
+      <text>老师</text>
+    </view>
+  </view>
+</view>

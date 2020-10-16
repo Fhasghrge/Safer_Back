@@ -1,0 +1,56 @@
+<view>
+  <view id="location">
+    <van-cell icon='location' title="{{Area}}" is-link bind:click="showPopup" />
+    <van-popup
+      show="{{ show }}"
+      round
+      position="bottom"
+      custom-style="height: 40%"
+      bind:close="onClose"
+      >
+      <van-area 
+        area-list="{{ areaList }}" 
+        value="510100" 
+        bind:confirm='confirmLoct'
+        bind:cancel = 'onCancel'
+      />
+    </van-popup>
+    <van-cell-group>
+      <van-field
+        id='detailAdd'
+        label='详细地址'
+        value="{{ value }}"
+        placeholder="{{detailAdd}}"
+        border="{{ false }}"
+        bind:change="inputAdd"
+      />
+    </van-cell-group>
+  </view>
+  <view id="daily-title">每日情况
+    <text>红色代表危险</text>
+  </view>
+  <view id="more-info">
+    <view wx:for="{{healths}}" wx:key='id'>
+      <text>{{item.info}}</text>
+      <van-switch 
+        name='{{item.info}}'
+        size='20px' 
+        class="switch"
+        active-color="#07c160"
+        inactive-color="#ee0a24" 
+        checked="{{item.checked}}" 
+        id="{{item.id}}"
+        bind:change="onChange" /> 
+    </view>
+    <van-cell-group>
+      <van-field
+        label='备注'
+        value="{{ value }}"
+        placeholder="请输入"
+        border="{{ false }}"
+        bind:change="inputMore"
+      />
+    </van-cell-group>
+  </view>
+  <button bindtap="submit">提交</button>
+</view>

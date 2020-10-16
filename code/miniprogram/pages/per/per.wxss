@@ -1,0 +1,40 @@
+#page {
+  /* background-color: #d1d8e0; */
+}
+navigator {
+  border: 0px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.table {
+  /* border: 1px solid red; */
+  margin: 10px auto;
+  box-shadow: 2px 2px 8px #ddd;
+}
+.table image {
+  /* border: 1px solid red; */
+}
+.navTitle {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.page__hd {
+  /* padding: 5rpx; */
+  /* font-size: 0.5em; */
+  box-shadow: 1px 1px 10px #ddd;
+}
+.page__title {
+  font-weight: bold;
+  text-indent: 2em;
+}
+.page__desc view {
+  background-color: rgb(101, 145, 241);
+  width: 20rem;
+  margin: 10rpx auto;
+  text-align: center;
+  /* font-weight: bold; */
+  padding: 0 2rem;
+  border-radius: 10rpx;
+}
