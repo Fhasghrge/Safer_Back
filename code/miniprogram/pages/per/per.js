@@ -88,6 +88,11 @@ Page({
           }, 2000);
         }
       })
+    }else {
+      wx.showToast({
+        title: '请完成宿舍办理之前的步骤！',
+        icon: 'none'
+      })
     }
   },
   submit: function () {

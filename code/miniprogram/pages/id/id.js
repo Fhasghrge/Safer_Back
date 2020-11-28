@@ -44,11 +44,31 @@ Page({
    * 并且对全局变量中进程 + 1
    * 提交后跳转到形成报告
    */
+  showErr: function (msg) {
+    wx.showToast({
+      title: msg,
+      icon: 'none'
+    })
+  },
   submitInfo: function () {
-  /**
-   * 做表单校验
-   */
-  console.log(this.data)
+    if(this.data.files.length === 0) {
+      this.showErr('请上传学生证图片作为审核！')
+      return;
+    }
+    if(!(/^20\d{6,17}$/.test(this.data.sid))) {
+      this.showErr('学号不符合规范！')
+      return;
+    }
+    if(!(this.data.bs === ('本'||'硕'))) {
+      this.showErr('请填写 本 / 硕')
+      return
+    }
+    console.log(this.data.sch)
+    console.log(this.data)
+    if(this.data.sch.toString() !== '电子科技大学') {
+      this.showErr('Sorry, 目前只支持电子科技大学！')
+      return
+    }
     wx.cloud.callFunction({
       name: 'basicinfo',
       data: {

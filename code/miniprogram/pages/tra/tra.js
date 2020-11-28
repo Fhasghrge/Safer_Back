@@ -75,6 +75,7 @@ Page({
   },
   //获取起点位置
   onChooseStartPoint() {
+    console.log('choose here')
     wx.chooseLocation({
       success: (res) => {
         this.setData({
@@ -82,6 +83,9 @@ Page({
           active: 0
         });
         console.log(res)
+      },
+      fail: (err) => {
+        console.log(err)
       }
     });
   },

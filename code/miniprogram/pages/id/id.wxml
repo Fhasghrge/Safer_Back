@@ -1,7 +1,7 @@
 <!-- pages/id/id.wxml -->
 <view class="page" data-weui-theme="{{theme}}">
 		<view wx:if="{{topTips}}" class="weui-toptips weui-toptips_warn fadeIn {{hide ? 'fadeOut' : ''}}">
-				请首先进行校园卡识别！
+				请首先上传校园卡作为审核！
 		</view>
 </view>
 <view class="page2" data-weui-theme="{{theme}}">
@@ -65,7 +65,7 @@
 																type="text"
 																bindinput='inputName'
 																class="weui-input" 
-																placeholder="识别校园卡后自动填写" 
+																placeholder="输入您的姓名" 
 																placeholder-class="weui-input__placeholder" 
 																value="{{sname}}" />
 														</view>
@@ -79,7 +79,7 @@
 																type="number"
 																bindinput='inputNum'
 																class="weui-input" 
-																placeholder="识别校园卡后自动填写" 
+																placeholder="输入您的学号" 
 																placeholder-class="weui-input__placeholder" 
 																value="{{sid}}" />
 														</view>
@@ -93,7 +93,7 @@
 																type="text"
 																class="weui-input" 
 																bindinput='inputCollage'
-																placeholder="识别校园卡后自动填写" 
+																placeholder="输入您的学院名称" 
 																placeholder-class="weui-input__placeholder" 
 																value="{{sxy}}" />
 														</view>
@@ -107,7 +107,7 @@
 																type="text"
 																bindinput='inputBS'
 																class="weui-input" 
-																placeholder="识别校园卡后自动填写" 
+																placeholder="本/硕" 
 																placeholder-class="weui-input__placeholder" 
 																value="{{bs}}" />
 														</view>
@@ -119,9 +119,9 @@
 														<view class="weui-cell__bd">
 																<input 
 																type="text"
-																bindinput='input'
+																bindinput='inputSchool'
 																class="weui-input" 
-																placeholder="识别校园卡后自动填写" 
+																placeholder="目前只支持电子科技大学" 
 																placeholder-class="weui-input__placeholder" 
 																value="{{sch}}" />
 														</view>
@@ -144,7 +144,7 @@
 										<view class="weui-footer__links">
 												<a href="https://www.uestc.edu.cn" class="weui-footer__link">学校官网</a>
 										</view>
-										<view class="weui-footer__text">Copyright © 2019-2020 yyx_lq</view>
+										<view class="weui-footer__text">Copyright © 2020-2021 shuang</view>
 								</view>
 						</view>
 				</view>

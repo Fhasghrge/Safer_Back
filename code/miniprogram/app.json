@@ -19,7 +19,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Back",
+    "navigationBarTitleText": "Safer-Back",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
